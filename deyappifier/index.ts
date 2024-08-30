@@ -1,6 +1,6 @@
 import { addPreSendListener, removePreSendListener } from "@api/MessageEvents";
 import definePlugin from "@utils/types";
-import { Devs } from "@utils/constants";
+
 
 let messageTimestamps: number[] = [];
 const MESSAGE_LIMIT = 10;
@@ -20,8 +20,8 @@ function checkMessageLimit(): boolean {
 }
 
 export default definePlugin({
-    name: "Yap banner",
-    description: "Blanks out messages if more than 10 messages are sent within a minute.",
+    name: "deyappifier",
+    description: "Blanks out messages if more than 10 are sent within a minute.",
     authors: [{name: "froginalog_", id: 1013625394315923558n}],
     dependencies: ["MessageEventsAPI"],
 
